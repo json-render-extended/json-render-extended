@@ -1,0 +1,76 @@
+{
+	"name": "@json-render-extended/core",
+	"version": "0.0.0",
+	"description": "Extension SDK, discovery protocol, and static project composer for JSON Render ecosystems.",
+	"license": "Apache-2.0",
+	"sideEffects": false,
+	"files": [
+		"dist",
+		"CHANGELOG.md",
+		"LICENSE",
+		"README.md"
+	],
+	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"bin": {
+		"json-render-extended": "./dist/cli.js"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		},
+		"./protocol": {
+			"types": "./dist/protocol.d.ts",
+			"import": "./dist/protocol.js",
+			"require": "./dist/protocol.cjs"
+		},
+		"./project": {
+			"types": "./dist/project.d.ts",
+			"import": "./dist/project.js",
+			"require": "./dist/project.cjs"
+		},
+		"./generate": {
+			"types": "./dist/generate.d.ts",
+			"import": "./dist/generate.js",
+			"require": "./dist/generate.cjs"
+		}
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"scripts": {
+		"build": "tsup",
+		"test": "vitest run",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"tsx": "4.21.0"
+	},
+	"devDependencies": {
+		"@types/node": "24.13.3",
+		"tsup": "8.5.1",
+		"typescript": "5.9.3",
+		"vitest": "4.1.10"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/json-render-extended/json-render-extended.git",
+		"directory": "packages/json-render-extended"
+	},
+	"homepage": "https://github.com/json-render-extended/json-render-extended/tree/main/packages/json-render-extended#readme",
+	"bugs": {
+		"url": "https://github.com/json-render-extended/json-render-extended/issues"
+	},
+	"keywords": [
+		"json-render",
+		"extensions",
+		"registry",
+		"generative-ui",
+		"sdk"
+	]
+}

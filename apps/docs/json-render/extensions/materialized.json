@@ -1,0 +1,31 @@
+{
+	"protocol": "json-render-extended/v1",
+	"id": "local:materialized",
+	"description": "Project-local components materialized from repository-backed JSON Render specs.",
+	"catalog": {
+		"components": {
+			"module": "./json-render/materialized/catalog",
+			"export": "componentDefinitions",
+			"keys": ["PackageSurface"]
+		}
+	},
+	"runtimes": {
+		"react": {
+			"components": {
+				"module": "./json-render/materialized/registry",
+				"export": "components",
+				"keys": ["Alert", "Badge", "Card", "PackageSurface"]
+			}
+		}
+	},
+	"overrides": {
+		"components": ["Alert", "Badge", "Card"]
+	},
+	"capabilities": {
+		"description": "Materialized composite specs and application-owned primitive overrides.",
+		"tags": ["local", "materialized", "components"]
+	},
+	"provenance": {
+		"source": "project-local:json-render/materializations"
+	}
+}

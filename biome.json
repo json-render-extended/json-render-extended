@@ -1,0 +1,76 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.5.7/schema.json",
+	"files": {
+		"includes": [
+			"**",
+			"!**/.next",
+			"!**/.svelte-kit",
+			"!**/.turbo",
+			"!**/dist",
+			"!**/node_modules",
+			"!**/work",
+			"!**/public/.well-known/agent-skills",
+			"!**/public/r",
+			"!**/*.generated.ts",
+			"!**/*.svelte"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"lineWidth": 100
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double",
+			"semicolons": "always",
+			"trailingCommas": "all"
+		}
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"preset": "recommended"
+		}
+	},
+	"overrides": [
+		{
+			"includes": ["packages/json-render-shadcn/src/generated/**/*.{ts,tsx}"],
+			"linter": {
+				"rules": {
+					"a11y": {
+						"noLabelWithoutControl": "off",
+						"noRedundantRoles": "off",
+						"noStaticElementInteractions": "off",
+						"useAriaPropsForRole": "off",
+						"useFocusableInteractive": "off",
+						"useKeyWithClickEvents": "off",
+						"useSemanticElements": "off"
+					},
+					"correctness": {
+						"useExhaustiveDependencies": "off"
+					},
+					"security": {
+						"noDangerouslySetInnerHtml": "off"
+					},
+					"suspicious": {
+						"noArrayIndexKey": "off",
+						"noDoubleEquals": "off"
+					}
+				}
+			}
+		}
+	],
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
+	}
+}

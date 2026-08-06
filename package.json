@@ -1,0 +1,42 @@
+{
+	"name": "json-render-extended",
+	"version": "0.0.0",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/json-render-extended/json-render-extended.git"
+	},
+	"homepage": "https://github.com/json-render-extended/json-render-extended#readme",
+	"bugs": {
+		"url": "https://github.com/json-render-extended/json-render-extended/issues"
+	},
+	"packageManager": "pnpm@9.15.9",
+	"engines": {
+		"node": ">=20.19"
+	},
+	"scripts": {
+		"build": "turbo run build",
+		"build:extensions": "turbo run build --filter='./packages/*'",
+		"check": "pnpm biome:check && pnpm skills:check && turbo run typecheck test",
+		"changeset": "changeset",
+		"dev": "turbo run dev",
+		"format": "biome check --write .",
+		"pack:check": "node tooling/check-package-archives.mjs",
+		"release": "pnpm release:check && changeset publish",
+		"release:check": "pnpm sync:check && pnpm check && pnpm build && pnpm pack:check",
+		"biome:check": "biome check .",
+		"skills:check": "node tooling/generate-agent-assets.mjs --check",
+		"skills:generate": "node tooling/generate-agent-assets.mjs",
+		"sync:shadcn": "node tooling/sync-shadcn.mjs",
+		"sync:check": "node tooling/sync-shadcn.mjs --check",
+		"version-packages": "changeset version && pnpm install --lockfile-only"
+	},
+	"devDependencies": {
+		"@changesets/cli": "2.31.1",
+		"@biomejs/biome": "2.5.7",
+		"shadcn": "4.16.1",
+		"tsx": "4.21.0",
+		"turbo": "2.10.8",
+		"typescript": "5.9.3"
+	}
+}

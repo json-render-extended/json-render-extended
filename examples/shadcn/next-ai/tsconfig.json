@@ -1,0 +1,14 @@
+{
+	"extends": "../../../tsconfig.base.json",
+	"compilerOptions": {
+		"incremental": true,
+		"plugins": [{ "name": "next" }],
+		"paths": {
+			"@/*": ["./*"],
+			"@json-render-extended/shadcn": ["../../../packages/json-render-shadcn/src/index.ts"],
+			"@json-render-extended/shadcn/*": ["../../../packages/json-render-shadcn/src/*.ts"]
+		}
+	},
+	"include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
+}

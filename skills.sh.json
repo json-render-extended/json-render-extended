@@ -1,0 +1,21 @@
+{
+	"$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+	"notGrouped": "bottom",
+	"groupings": [
+		{
+			"title": "Using JSON Render Extended",
+			"description": "Install and compose the published JSON Render extension packages.",
+			"skills": [
+				"json-render-extensions",
+				"json-render-shadcn",
+				"json-render-icons",
+				"json-render-playground"
+			]
+		},
+		{
+			"title": "Extending the ecosystem",
+			"description": "Publish third-party shadcn registry items with JSON Render metadata.",
+			"skills": ["json-render-registry-authoring"]
+		}
+	]
+}

@@ -1,0 +1,247 @@
+{
+	"name": "@json-render-extended/icons",
+	"version": "0.0.0",
+	"description": "An extensible Icon catalog, semantic discovery layer, and optional icon-set adapters for JSON Render.",
+	"license": "Apache-2.0",
+	"sideEffects": false,
+	"files": [
+		"dist",
+		"CHANGELOG.md",
+		"LICENSE",
+		"README.md",
+		"THIRD_PARTY_NOTICES.md"
+	],
+	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"bin": {
+		"json-render-icons": "./dist/cli.js"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		},
+		"./catalog": {
+			"types": "./dist/catalog.d.ts",
+			"import": "./dist/catalog.js",
+			"require": "./dist/catalog.cjs"
+		},
+		"./metadata": {
+			"types": "./dist/metadata.d.ts",
+			"import": "./dist/metadata.js",
+			"require": "./dist/metadata.cjs"
+		},
+		"./project": {
+			"types": "./dist/project.d.ts",
+			"import": "./dist/project.js",
+			"require": "./dist/project.cjs"
+		},
+		"./extension": {
+			"types": "./dist/extension.d.ts",
+			"import": "./dist/extension.js",
+			"require": "./dist/extension.cjs"
+		},
+		"./lucide": {
+			"types": "./dist/lucide/index.d.ts",
+			"import": "./dist/lucide/index.js",
+			"require": "./dist/lucide/index.cjs"
+		},
+		"./lucide/catalog": {
+			"types": "./dist/lucide/catalog.d.ts",
+			"import": "./dist/lucide/catalog.js",
+			"require": "./dist/lucide/catalog.cjs"
+		},
+		"./lucide/metadata": {
+			"types": "./dist/lucide/metadata.d.ts",
+			"import": "./dist/lucide/metadata.js",
+			"require": "./dist/lucide/metadata.cjs"
+		},
+		"./lucide/react": {
+			"types": "./dist/lucide/react.d.ts",
+			"import": "./dist/lucide/react.js",
+			"require": "./dist/lucide/react.cjs"
+		},
+		"./tabler": {
+			"types": "./dist/tabler/index.d.ts",
+			"import": "./dist/tabler/index.js",
+			"require": "./dist/tabler/index.cjs"
+		},
+		"./tabler/catalog": {
+			"types": "./dist/tabler/catalog.d.ts",
+			"import": "./dist/tabler/catalog.js",
+			"require": "./dist/tabler/catalog.cjs"
+		},
+		"./tabler/metadata": {
+			"types": "./dist/tabler/metadata.d.ts",
+			"import": "./dist/tabler/metadata.js",
+			"require": "./dist/tabler/metadata.cjs"
+		},
+		"./tabler/react": {
+			"types": "./dist/tabler/react.d.ts",
+			"import": "./dist/tabler/react.js",
+			"require": "./dist/tabler/react.cjs"
+		},
+		"./hugeicons": {
+			"types": "./dist/hugeicons/index.d.ts",
+			"import": "./dist/hugeicons/index.js",
+			"require": "./dist/hugeicons/index.cjs"
+		},
+		"./hugeicons/catalog": {
+			"types": "./dist/hugeicons/catalog.d.ts",
+			"import": "./dist/hugeicons/catalog.js",
+			"require": "./dist/hugeicons/catalog.cjs"
+		},
+		"./hugeicons/metadata": {
+			"types": "./dist/hugeicons/metadata.d.ts",
+			"import": "./dist/hugeicons/metadata.js",
+			"require": "./dist/hugeicons/metadata.cjs"
+		},
+		"./hugeicons/react": {
+			"types": "./dist/hugeicons/react.d.ts",
+			"import": "./dist/hugeicons/react.js",
+			"require": "./dist/hugeicons/react.cjs"
+		},
+		"./phosphor": {
+			"types": "./dist/phosphor/index.d.ts",
+			"import": "./dist/phosphor/index.js",
+			"require": "./dist/phosphor/index.cjs"
+		},
+		"./phosphor/catalog": {
+			"types": "./dist/phosphor/catalog.d.ts",
+			"import": "./dist/phosphor/catalog.js",
+			"require": "./dist/phosphor/catalog.cjs"
+		},
+		"./phosphor/metadata": {
+			"types": "./dist/phosphor/metadata.d.ts",
+			"import": "./dist/phosphor/metadata.js",
+			"require": "./dist/phosphor/metadata.cjs"
+		},
+		"./phosphor/react": {
+			"types": "./dist/phosphor/react.d.ts",
+			"import": "./dist/phosphor/react.js",
+			"require": "./dist/phosphor/react.cjs"
+		},
+		"./remix": {
+			"types": "./dist/remix/index.d.ts",
+			"import": "./dist/remix/index.js",
+			"require": "./dist/remix/index.cjs"
+		},
+		"./remix/catalog": {
+			"types": "./dist/remix/catalog.d.ts",
+			"import": "./dist/remix/catalog.js",
+			"require": "./dist/remix/catalog.cjs"
+		},
+		"./remix/metadata": {
+			"types": "./dist/remix/metadata.d.ts",
+			"import": "./dist/remix/metadata.js",
+			"require": "./dist/remix/metadata.cjs"
+		},
+		"./remix/react": {
+			"types": "./dist/remix/react.d.ts",
+			"import": "./dist/remix/react.js",
+			"require": "./dist/remix/react.cjs"
+		}
+	},
+	"json-render-extended": {
+		"protocol": "json-render-extended/v1",
+		"adapter": {
+			"module": "@json-render-extended/icons/extension",
+			"export": "iconsExtensionAdapter"
+		}
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"scripts": {
+		"build": "tsup",
+		"test": "vitest run",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@json-render-extended/core": "workspace:*"
+	},
+	"devDependencies": {
+		"@hugeicons/core-free-icons": "4.2.3",
+		"@hugeicons/react": "1.1.9",
+		"@json-render/core": "0.19.0",
+		"@json-render/react": "0.19.0",
+		"@phosphor-icons/react": "2.1.10",
+		"@remixicon/react": "4.9.0",
+		"@tabler/icons-react": "3.46.0",
+		"@types/node": "24.13.3",
+		"@types/react": "^19.2.0",
+		"@types/react-dom": "^19.2.0",
+		"lucide-react": "1.28.0",
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
+		"tsup": "8.5.1",
+		"typescript": "5.9.3",
+		"vitest": "4.1.10",
+		"zod": "^4.0.0"
+	},
+	"peerDependencies": {
+		"@hugeicons/core-free-icons": "^4.2.3",
+		"@hugeicons/react": "^1.1.9",
+		"@json-render/core": "^0.19.0",
+		"@json-render/react": "^0.19.0",
+		"@phosphor-icons/react": "^2.1.10",
+		"@remixicon/react": "^4.9.0",
+		"@tabler/icons-react": "^3.46.0",
+		"lucide-react": "^1.28.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"zod": "^4.0.0"
+	},
+	"peerDependenciesMeta": {
+		"@hugeicons/core-free-icons": {
+			"optional": true
+		},
+		"@hugeicons/react": {
+			"optional": true
+		},
+		"@phosphor-icons/react": {
+			"optional": true
+		},
+		"@remixicon/react": {
+			"optional": true
+		},
+		"@tabler/icons-react": {
+			"optional": true
+		},
+		"@json-render/core": {
+			"optional": true
+		},
+		"@json-render/react": {
+			"optional": true
+		},
+		"lucide-react": {
+			"optional": true
+		},
+		"react": {
+			"optional": true
+		},
+		"react-dom": {
+			"optional": true
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/json-render-extended/json-render-extended.git",
+		"directory": "packages/json-render-icons"
+	},
+	"homepage": "https://github.com/json-render-extended/json-render-extended/tree/main/packages/json-render-icons#readme",
+	"bugs": {
+		"url": "https://github.com/json-render-extended/json-render-extended/issues"
+	},
+	"keywords": [
+		"json-render",
+		"icons",
+		"catalog",
+		"generative-ui",
+		"semantic-search"
+	]
+}

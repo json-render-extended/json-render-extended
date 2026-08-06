@@ -1,0 +1,23 @@
+{
+	"$schema": "https://ui.shadcn.com/schema.json",
+	"style": "base-nova",
+	"rsc": true,
+	"tsx": true,
+	"tailwind": {
+		"config": "",
+		"css": "app/globals.css",
+		"baseColor": "neutral",
+		"cssVariables": true
+	},
+	"aliases": {
+		"components": "@/components",
+		"ui": "@/components/ui",
+		"hooks": "@/hooks",
+		"lib": "@/lib",
+		"utils": "@/lib/utils"
+	},
+	"registries": {
+		"@jr-ext": "http://127.0.0.1:3210/r/{name}.json",
+		"@shadcnblocks": "https://www.shadcnblocks.com/r/{name}.json"
+	}
+}

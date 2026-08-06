@@ -1,0 +1,11 @@
+{
+	"$schema": "https://ui.shadcn.com/schema/registry-item.json",
+	"name": "json-render-extended",
+	"type": "registry:item",
+	"meta": {
+		"json-render-extended": {
+			"protocol": "json-render-extended/v1",
+			"mode": "installed-items"
+		}
+	}
+}

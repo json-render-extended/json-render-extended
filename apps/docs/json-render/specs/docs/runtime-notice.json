@@ -1,0 +1,23 @@
+{
+	"root": "notice",
+	"state": {
+		"props": {
+			"title": "Runtime JSON Render spec",
+			"message": "This spec stays as JSON in production because it has no materialization receipt."
+		}
+	},
+	"elements": {
+		"notice": {
+			"type": "Alert",
+			"props": {
+				"title": {
+					"$state": "/props/title"
+				},
+				"message": {
+					"$state": "/props/message"
+				},
+				"type": "info"
+			}
+		}
+	}
+}

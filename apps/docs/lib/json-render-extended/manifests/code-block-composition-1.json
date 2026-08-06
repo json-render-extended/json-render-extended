@@ -1,0 +1,15 @@
+{
+	"name": "@jr-ext/code-block-composition-1",
+	"meta": {
+		"json-render-extended": {
+			"protocol": "json-render-extended/v1",
+			"mode": "package",
+			"catalog": "@/lib/json-render-extended/code-block-composition-1.catalog",
+			"registries": {
+				"base-ui": "@/lib/json-render-extended/code-block-composition-1.registry",
+				"react-aria": "@/lib/json-render-extended/code-block-composition-1.registry",
+				"radix": "@/lib/json-render-extended/code-block-composition-1.registry"
+			}
+		}
+	}
+}

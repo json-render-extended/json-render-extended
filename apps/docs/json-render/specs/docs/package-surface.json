@@ -1,0 +1,113 @@
+{
+	"root": "surface",
+	"state": {
+		"props": {
+			"title": "One spec, three primitive bases"
+		}
+	},
+	"elements": {
+		"surface": {
+			"type": "Stack",
+			"props": {
+				"direction": "vertical",
+				"gap": "lg",
+				"align": "stretch",
+				"className": "mx-auto w-full max-w-3xl p-6"
+			},
+			"children": ["badge", "title", "lead", "icons", "cards", "alert"]
+		},
+		"badge": {
+			"type": "Badge",
+			"props": {
+				"text": "SHADCN REGISTRY",
+				"variant": "secondary"
+			}
+		},
+		"title": {
+			"type": "Heading",
+			"props": {
+				"text": {
+					"$state": "/props/title"
+				},
+				"level": "h2"
+			}
+		},
+		"lead": {
+			"type": "Text",
+			"props": {
+				"text": "Compose a JSON Render surface, inspect the package renderer, then export code for this project.",
+				"variant": "muted"
+			}
+		},
+		"cards": {
+			"type": "Grid",
+			"props": {
+				"columns": 2,
+				"gap": "md"
+			},
+			"children": ["catalog", "ownership"]
+		},
+		"catalog": {
+			"type": "Card",
+			"props": {
+				"title": "Package catalog",
+				"description": "The live preview uses the selected JSON Render extension registry."
+			}
+		},
+		"ownership": {
+			"type": "Card",
+			"props": {
+				"title": "Application-owned output",
+				"description": "Generated code imports the consuming project's shadcn components."
+			}
+		},
+		"alert": {
+			"type": "Alert",
+			"props": {
+				"title": "Ready to iterate",
+				"message": "Valid JSON updates the preview and TypeScript output in real time."
+			}
+		},
+		"icons": {
+			"type": "Stack",
+			"props": {
+				"direction": "horizontal",
+				"gap": "lg",
+				"align": "center"
+			},
+			"children": ["success", "payment", "search", "settings"]
+		},
+		"success": {
+			"type": "Icon",
+			"props": {
+				"name": "circle-check",
+				"label": "Success",
+				"size": "xl"
+			}
+		},
+		"payment": {
+			"type": "Icon",
+			"props": {
+				"name": "credit-card",
+				"label": "Payment",
+				"size": "xl"
+			}
+		},
+		"search": {
+			"type": "Icon",
+			"props": {
+				"name": "search",
+				"label": "Search",
+				"size": "xl"
+			}
+		},
+		"settings": {
+			"type": "Icon",
+			"props": {
+				"name": "settings",
+				"label": "Settings",
+				"size": "xl"
+			}
+		}
+	}
+}

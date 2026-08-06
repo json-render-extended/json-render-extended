@@ -1,0 +1,13 @@
+{
+	"name": "@json-render-extended/registry",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"build": "shadcn build",
+		"dev": "pnpm build && node server.mjs",
+		"test": "shadcn registry validate ./registry.json"
+	},
+	"devDependencies": {
+		"shadcn": "4.16.1"
+	}
+}

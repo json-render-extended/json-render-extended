@@ -1,0 +1,12 @@
+{
+	"extends": "./tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@json-render-extended/core": ["packages/json-render-extended/src/index.ts"],
+			"@json-render-extended/core/*": ["packages/json-render-extended/src/*"],
+			"@json-render-extended/icons": ["packages/json-render-icons/src/index.ts"],
+			"@json-render-extended/icons/*": ["packages/json-render-icons/src/*"]
+		}
+	}
+}

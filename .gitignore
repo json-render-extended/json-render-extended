@@ -1,0 +1,17 @@
+node_modules
+.idea
+.next
+.svelte-kit
+.turbo
+dist
+coverage
+*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+!.env.example
+work/
+.playwright-cli/
+next-env.d.ts
+apps/registry/public/r/
+apps/docs/public/.well-known/agent-skills/

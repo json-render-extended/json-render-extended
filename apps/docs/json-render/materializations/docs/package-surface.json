@@ -1,0 +1,37 @@
+{
+	"protocol": "json-render-extended-materialization/v1",
+	"specId": "docs/package-surface",
+	"specPath": "json-render/specs/docs/package-surface.json",
+	"sourceDigest": "sha256:1711d1cf28253e85fac8232e0fa23ecdafd0e020144e0be45219624c34ffd605",
+	"providerId": "shadcn",
+	"component": {
+		"specId": "docs/package-surface",
+		"key": "PackageSurface",
+		"module": "components/generated/package-surface",
+		"export": "PackageSurface",
+		"props": [
+			{
+				"name": "title",
+				"type": "string",
+				"defaultValue": "One spec, three primitive bases"
+			}
+		]
+	},
+	"runtimeCompositions": [
+		{
+			"factory": {
+				"module": "@json-render-extended/shadcn/base-ui",
+				"export": "createBaseUiComponents"
+			},
+			"modules": ["@/components/ui/alert", "@/components/ui/badge", "@/components/ui/card"],
+			"keys": ["Alert", "Badge", "Card"]
+		}
+	],
+	"outputs": [
+		{
+			"path": "components/generated/package-surface.tsx",
+			"language": "tsx",
+			"digest": "sha256:35141977d4d4fa443babdfbfcfc4724379444f959b6dd91c8085c0e8be5038fa"
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"tasks": {
+		"build": {
+			"dependsOn": ["^build"],
+			"outputs": [
+				"dist/**",
+				".next/**",
+				".svelte-kit/output/**",
+				"public/r/**",
+				"public/.well-known/agent-skills/**"
+			]
+		},
+		"typecheck": {
+			"dependsOn": ["^build", "build"],
+			"outputs": []
+		},
+		"test": {
+			"dependsOn": ["build"],
+			"outputs": []
+		},
+		"dev": {
+			"cache": false,
+			"persistent": true
+		}
+	}
+}

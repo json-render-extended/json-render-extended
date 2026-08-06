@@ -1,0 +1,160 @@
+{
+	"name": "@json-render-extended/shadcn",
+	"version": "0.0.0",
+	"description": "Multi-base shadcn/ui component registries for json-render.",
+	"license": "Apache-2.0",
+	"sideEffects": false,
+	"files": [
+		"dist",
+		"CHANGELOG.md",
+		"LICENSE",
+		"README.md",
+		"THIRD_PARTY_NOTICES.md",
+		"tailwind.css",
+		"src/generated/upstream-lock.json"
+	],
+	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"bin": {
+		"json-render-shadcn": "./dist/cli.js"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.cjs"
+		},
+		"./catalog": {
+			"types": "./dist/catalog.d.ts",
+			"import": "./dist/catalog.js",
+			"require": "./dist/catalog.cjs"
+		},
+		"./capabilities": {
+			"types": "./dist/capabilities.d.ts",
+			"import": "./dist/capabilities.js",
+			"require": "./dist/capabilities.cjs"
+		},
+		"./create-registry": {
+			"types": "./dist/create-registry.d.ts",
+			"import": "./dist/create-registry.js",
+			"require": "./dist/create-registry.cjs"
+		},
+		"./extend": {
+			"types": "./dist/extend.d.ts",
+			"import": "./dist/extend.js",
+			"require": "./dist/extend.cjs"
+		},
+		"./project": {
+			"types": "./dist/project.d.ts",
+			"import": "./dist/project.js",
+			"require": "./dist/project.cjs"
+		},
+		"./extension": {
+			"types": "./dist/extension.d.ts",
+			"import": "./dist/extension.js",
+			"require": "./dist/extension.cjs"
+		},
+		"./authoring": {
+			"types": "./dist/authoring.d.ts",
+			"import": "./dist/authoring.js",
+			"require": "./dist/authoring.cjs"
+		},
+		"./base-ui": {
+			"types": "./dist/base-ui.d.ts",
+			"import": "./dist/base-ui.js",
+			"require": "./dist/base-ui.cjs"
+		},
+		"./react-aria": {
+			"types": "./dist/react-aria.d.ts",
+			"import": "./dist/react-aria.js",
+			"require": "./dist/react-aria.cjs"
+		},
+		"./radix": {
+			"types": "./dist/radix.d.ts",
+			"import": "./dist/radix.js",
+			"require": "./dist/radix.cjs"
+		},
+		"./tailwind.css": "./tailwind.css"
+	},
+	"json-render-extended": {
+		"protocol": "json-render-extended/v1",
+		"adapter": {
+			"module": "@json-render-extended/shadcn/extension",
+			"export": "shadcnExtensionAdapter"
+		}
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"test": "vitest run",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@base-ui/react": "1.6.0",
+		"@json-render-extended/core": "workspace:*",
+		"@json-render-extended/icons": "workspace:*",
+		"@json-render/shadcn": "0.19.0",
+		"@shadcn/react": "0.2.1",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"cmdk": "1.1.1",
+		"embla-carousel-react": "8.6.0",
+		"input-otp": "1.4.2",
+		"lucide-react": "1.28.0",
+		"next-themes": "0.4.6",
+		"radix-ui": "^1.4.3",
+		"react-aria-components": "1.19.0",
+		"react-day-picker": "9.7.0",
+		"react-resizable-panels": "4.12.2",
+		"recharts": "3.8.0",
+		"shadcn": "4.16.1",
+		"sonner": "2.0.7",
+		"tailwind-merge": "^3.6.0",
+		"vaul": "1.1.2"
+	},
+	"devDependencies": {
+		"@json-render/core": "0.19.0",
+		"@json-render/react": "0.19.0",
+		"@types/node": "24.13.3",
+		"@types/react": "^19.2.0",
+		"@types/react-dom": "^19.2.0",
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
+		"tailwindcss": "^4.3.0",
+		"tsup": "8.5.1",
+		"tw-animate-css": "^1.4.0",
+		"vitest": "4.1.10",
+		"zod": "^4.0.0"
+	},
+	"peerDependencies": {
+		"@json-render/core": "^0.19.0",
+		"@json-render/react": "^0.19.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"tailwindcss": "^4.0.0",
+		"zod": "^4.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/json-render-extended/json-render-extended.git",
+		"directory": "packages/json-render-shadcn"
+	},
+	"homepage": "https://github.com/json-render-extended/json-render-extended/tree/main/packages/json-render-shadcn#readme",
+	"bugs": {
+		"url": "https://github.com/json-render-extended/json-render-extended/issues"
+	},
+	"keywords": [
+		"json-render",
+		"shadcn",
+		"base-ui",
+		"react-aria",
+		"radix-ui",
+		"generative-ui"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"name": "example-component",
+	"meta": {
+		"json-render-extended": {
+			"protocol": "json-render-extended/v1",
+			"catalog": "@/lib/json-render-extended/example-component.catalog",
+			"registries": {
+				"base-ui": "@/lib/json-render-extended/example-component.registry",
+				"react-aria": "@/lib/json-render-extended/example-component.registry",
+				"radix": "@/lib/json-render-extended/example-component.registry"
+			}
+		}
+	}
+}
