@@ -1,5 +1,6 @@
 name: CI
 
+# Validation workflow for linting, tests, and package checks.
 on:
   pull_request:
   push:
