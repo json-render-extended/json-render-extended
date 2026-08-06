@@ -4,6 +4,7 @@
 		"includes": [
 			"**",
 			"!**/.next",
+			"!**/.pnpm-store",
 			"!**/.svelte-kit",
 			"!**/.turbo",
 			"!**/dist",

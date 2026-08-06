@@ -11,7 +11,12 @@ export default defineConfig({
 		runtime: "src/spec-runtime.tsx",
 	},
 	format: ["esm", "cjs"],
-	dts: true,
+	// Remove this override when https://github.com/egoist/tsup/issues/1388 is resolved.
+	dts: {
+		compilerOptions: {
+			ignoreDeprecations: "6.0",
+		},
+	},
 	clean: true,
 	sourcemap: true,
 	splitting: false,
