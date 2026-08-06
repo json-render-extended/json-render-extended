@@ -24,7 +24,7 @@
 		"pack:check": "node tooling/check-package-archives.mjs",
 		"release": "pnpm release:check && changeset publish",
 		"release:check": "pnpm sync:check && pnpm check && pnpm build && pnpm pack:check",
-		"biome:check": "biome check .",
+		"biome:check": "biome check --files-ignore-unknown apps examples packages skills tooling",
 		"skills:check": "node tooling/generate-agent-assets.mjs --check",
 		"skills:generate": "node tooling/generate-agent-assets.mjs",
 		"sync:shadcn": "node tooling/sync-shadcn.mjs",
