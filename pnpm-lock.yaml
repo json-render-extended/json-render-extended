@@ -31,7 +31,7 @@ importers:
     dependencies:
       '@base-ui/react':
         specifier: 1.6.0
-        version: 1.6.0(@date-fns/tz@1.2.0)(@types/react@19.2.18)(date-fns@4.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 1.6.0(@date-fns/tz@1.5.0)(@types/react@19.2.18)(date-fns@4.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@hugeicons/core-free-icons':
         specifier: 4.2.3
         version: 4.2.3
@@ -450,7 +450,7 @@ importers:
     dependencies:
       '@base-ui/react':
         specifier: 1.6.0
-        version: 1.6.0(@date-fns/tz@1.2.0)(@types/react@19.2.18)(date-fns@4.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 1.6.0(@date-fns/tz@1.5.0)(@types/react@19.2.18)(date-fns@4.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@json-render-extended/core':
         specifier: workspace:*
         version: link:../json-render-extended
@@ -491,8 +491,8 @@ importers:
         specifier: 1.19.0
         version: 1.19.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-day-picker:
-        specifier: 9.7.0
-        version: 9.7.0(react@19.2.8)
+        specifier: 10.0.1
+        version: 10.0.1(@types/react@19.2.18)(react@19.2.8)
       react-resizable-panels:
         specifier: 4.12.2
         version: 4.12.2(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -845,8 +845,8 @@ packages:
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
 
-  '@date-fns/tz@1.2.0':
-    resolution: {integrity: sha512-LBrd7MiJZ9McsOgxqWX7AaxrDjcFVjWH/tIKJd7pnR7McaslGYOP1QmmiBXdJH/H/yLCT+rcQ7FaPBUxRGUtrg==}
+  '@date-fns/tz@1.5.0':
+    resolution: {integrity: sha512-lwYN/vDPeNRULcepoE/LO2Pgx+7/RV+S9ARfbc9lr2DtGkOD7pAiruHvbR1RX3Qyf6ja47EWJDMsNK5vK08DJg==}
 
   '@dotenvx/dotenvx@1.75.1':
     resolution: {integrity: sha512-/BITOC9dmS/edY2zQwZNicQ059O6RKabtQfyEafV0nGtfYRNHYy1DIPiYVcov40+tob9hfmBnbR963dS+EQ1DQ==}
@@ -2958,11 +2958,8 @@ packages:
     resolution: {integrity: sha512-ndfJ/JxxMd3nw31uyKoY2naivF+r29V+Lc0svZxe1JvvIRmi8hUsrMvdOwgS1o6uBHmiz91geQ0ylPP0aj1VUA==}
     engines: {node: '>=12'}
 
-  date-fns-jalali@4.1.0-0:
-    resolution: {integrity: sha512-hTIP/z+t+qKwBDcmmsnmjWTduxCg+5KfdqWQvb2X/8C9+knYY6epN/pfxdDuyVlSVeFz0sM5eEfwIUQ70U4ckg==}
-
-  date-fns@4.1.0:
-    resolution: {integrity: sha512-Ukq0owbQXxa/U3EGtsdVBkR1w7KOQ5gIBqdH2hkvknzZPYvBxb/aa6E8L7tmjFtkwZBu3UXBbjIgPo/Ez4xaNg==}
+  date-fns@4.4.0:
+    resolution: {integrity: sha512-+1UMbeh68lH1SegH83CGWwpb6OHHbpSgr3+s5Eww5M4CAgswBpoWS0AjTOfEJ33HiYKz1hdj/KTFprzXHmq/6w==}
 
   debounce-fn@4.0.0:
     resolution: {integrity: sha512-8pYCQiL9Xdcg0UPSD3d+0KMlOjp+KGU5EPwYddgzQ7DATsg4fuUDjQtsYLmWjnk2obnNHgV3vE2Y4jejSOJVBQ==}
@@ -4126,11 +4123,15 @@ packages:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
       react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
 
-  react-day-picker@9.7.0:
-    resolution: {integrity: sha512-urlK4C9XJZVpQ81tmVgd2O7lZ0VQldZeHzNejbwLWZSkzHH498KnArT0EHNfKBOWwKc935iMLGZdxXPRISzUxQ==}
+  react-day-picker@10.0.1:
+    resolution: {integrity: sha512-eNh6BlwcYInWaJtRv18mXQ06Ys/H6rdTZAnTaSdOYJuTpwP1JMCHNd1FDRadA+gbeinq+psdULN5Xnowy9mV8w==}
     engines: {node: '>=18'}
     peerDependencies:
+      '@types/react': '>=16.8.0'
       react: '>=16.8.0'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
 
   react-dom@19.2.8:
     resolution: {integrity: sha512-rVprimfGBG3DR+Tq0IQG2DT5PxKth1WIGDmj5yPmlzr4YBe7uyE+Du4oVqTDXZSHGGGXRtTJEGSSePyQCMBglQ==}
@@ -5119,7 +5120,7 @@ snapshots:
       '@babel/helper-string-parser': 7.29.7
       '@babel/helper-validator-identifier': 7.29.7
 
-  '@base-ui/react@1.6.0(@date-fns/tz@1.2.0)(@types/react@19.2.18)(date-fns@4.1.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
+  '@base-ui/react@1.6.0(@date-fns/tz@1.5.0)(@types/react@19.2.18)(date-fns@4.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@babel/runtime': 7.29.7
       '@base-ui/utils': 0.3.1(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -5129,9 +5130,9 @@ snapshots:
       react-dom: 19.2.8(react@19.2.8)
       use-sync-external-store: 1.6.0(react@19.2.8)
     optionalDependencies:
-      '@date-fns/tz': 1.2.0
+      '@date-fns/tz': 1.5.0
       '@types/react': 19.2.18
-      date-fns: 4.1.0
+      date-fns: 4.4.0
 
   '@base-ui/utils@0.3.1(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
@@ -5322,7 +5323,7 @@ snapshots:
       human-id: 4.2.0
       prettier: 2.8.8
 
-  '@date-fns/tz@1.2.0': {}
+  '@date-fns/tz@1.5.0': {}
 
   '@dotenvx/dotenvx@1.75.1':
     dependencies:
@@ -7249,9 +7250,7 @@ snapshots:
 
   d3-timer@3.0.1: {}
 
-  date-fns-jalali@4.1.0-0: {}
-
-  date-fns@4.1.0: {}
+  date-fns@4.4.0: {}
 
   debounce-fn@4.0.0:
     dependencies:
@@ -8364,12 +8363,13 @@ snapshots:
       react-stately: 3.48.0(react@19.2.8)
       use-sync-external-store: 1.6.0(react@19.2.8)
 
-  react-day-picker@9.7.0(react@19.2.8):
+  react-day-picker@10.0.1(@types/react@19.2.18)(react@19.2.8):
     dependencies:
-      '@date-fns/tz': 1.2.0
-      date-fns: 4.1.0
-      date-fns-jalali: 4.1.0-0
+      '@date-fns/tz': 1.5.0
+      date-fns: 4.4.0
       react: 19.2.8
+    optionalDependencies:
+      '@types/react': 19.2.18
 
   react-dom@19.2.8(react@19.2.8):
     dependencies:
