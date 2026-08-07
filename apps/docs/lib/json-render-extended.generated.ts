@@ -200,7 +200,14 @@ export const project = {
 			}
 		}
 	],
-	"diagnostics": []
+	"diagnostics": [
+		{
+			"code": "fetch-failed",
+			"message": "Could not inspect @jr-ext for a JSON Render extension because the request failed.",
+			"severity": "warning",
+			"extensionId": "@json-render-extended/shadcn"
+		}
+	]
 } as const;
 
 export const styles = [
