@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"agent:generate": "pnpm --dir ../.. skills:generate",
-		"extension:generate": "pnpm --dir ../.. build:extensions && pnpm exec json-render-extended generate --cwd . --output lib/json-render-extended.generated.ts",
+		"extension:generate": "pnpm --dir ../.. build:extensions && node ../../packages/json-render-extended/dist/cli.js generate --cwd . --output lib/json-render-extended.generated.ts",
 		"registry:generate": "pnpm extension:generate",
 		"spec:build": "pnpm --dir ../.. --filter @json-render-extended/playground build && node ../../packages/json-render-playground/dist/cli.js build --cwd . --output json-render/specs.ts",
 		"spec:refresh": "pnpm --dir ../.. --filter @json-render-extended/playground build && node ../../packages/json-render-playground/dist/cli.js build --cwd . --output json-render/specs.ts --refresh-materialized",
