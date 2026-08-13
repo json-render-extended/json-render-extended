@@ -96,7 +96,7 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@base-ui/react": "1.6.0",
+		"@base-ui/react": "1.7.0",
 		"@json-render-extended/core": "workspace:*",
 		"@json-render-extended/icons": "workspace:*",
 		"@json-render/shadcn": "0.19.0",
