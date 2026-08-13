@@ -49,7 +49,7 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"tsx": "4.21.0"
+		"tsx": "4.23.12"
 	},
 	"devDependencies": {
 		"@types/node": "24.13.3",
